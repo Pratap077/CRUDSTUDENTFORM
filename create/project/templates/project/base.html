@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'project/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'project/css/style.css' %}">
+  
+  <title>Document</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center alert alert-danger"> This Project Is Function Based View </h1>
+    {% block content %}
+    {% endblock content %}
+  </div>
+
+  
+  <script src="{% static 'project/js/jquery.js'
+  %}"></script>
+  <script src="{% static 'project/js/popper.js'
+  %}"></script>
+  <script src="{% static 'project/js/bootstrap.js'
+  %}"></script>
+</body>
+</html>
